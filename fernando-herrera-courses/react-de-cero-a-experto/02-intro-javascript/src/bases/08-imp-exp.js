@@ -6,7 +6,6 @@
  * the heroes file contain an array export of heroes.
  */
 import anything_else, {namesArray}  from '../data/heroes';
-
 //console.log(anything_else);
 
 // const getHeroeById = (id) => {
