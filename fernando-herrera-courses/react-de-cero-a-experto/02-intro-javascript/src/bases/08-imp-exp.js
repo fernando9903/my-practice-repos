@@ -7,7 +7,7 @@
  */
 import anything_else, {namesArray}  from '../data/heroes';
 
-console.log(anything_else);
+//console.log(anything_else);
 
 // const getHeroeById = (id) => {
 //     return heroes.find( (element) => {
@@ -19,17 +19,17 @@ console.log(anything_else);
 //     });
 // } The below code is more simple with the same result
 
-const getHeroeById = (id) => {
+export const getHeroeById = (id) => {
     return anything_else.find( (element) => element.id === id);
 }
 
-console.log(getHeroeById(2));
+//console.log(getHeroeById(2));
 
-const getHeroeByOwner = (owner) => {
+export const getHeroesByOwner = (owner) => {
     return anything_else.filter( (element) => {
         return element.owner === owner;
     })
 }
 
-console.log(getHeroeByOwner('DC'));
-console.log(namesArray);
+//console.log(getHeroeByOwner('DC'));
+//console.log(namesArray);
