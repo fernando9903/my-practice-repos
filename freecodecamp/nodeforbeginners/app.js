@@ -84,3 +84,19 @@ const fs = require('fs');
 //         console.log("Eliminado correctamente!")
 //     }
 // })
+
+// fs.mkdir ('tutorial', (err) => {
+//     if(err) {
+//         console.log(err);
+//     } else {
+//         console.log('creado el folder');
+//     }
+// })
+
+fs.rmdir ('tutorial', (err) => {
+    if(err) {
+        console.log(err);
+    } else {
+        console.log('eliminado el folder');
+    }
+})
