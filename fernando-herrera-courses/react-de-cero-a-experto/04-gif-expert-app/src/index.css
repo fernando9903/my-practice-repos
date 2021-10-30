@@ -5,3 +5,8 @@
 body {
   padding: 10%;
 }
+
+input {
+  color: blueviolet;
+  width: 100%;
+}
