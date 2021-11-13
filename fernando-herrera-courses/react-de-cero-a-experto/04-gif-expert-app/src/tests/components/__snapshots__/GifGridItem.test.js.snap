@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Test into <GifGridItem/> component The component should be render correclty 1`] = `
+<div
+  className="card"
+>
+  <img
+    alt="Some title"
+    src="https://localhost/some.jpg"
+  />
+  <p>
+    Some title
+  </p>
+</div>
+`;
