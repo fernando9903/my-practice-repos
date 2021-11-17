@@ -14,14 +14,12 @@ export const useFetch = ( url ) => {
         fetch(url)
         .then( resp => resp.json())
         .then(data => {
-            setTimeout(()=>{
-                if (isMounted.current)
-                    setState({
-                        loading: false,
-                        error: null,
-                        data,
-                    });
-            }, 4000);
+            if (isMounted.current)
+                setState({
+                    loading: false,
+                    error: null,
+                    data,
+                });
         })
 
         return () => {

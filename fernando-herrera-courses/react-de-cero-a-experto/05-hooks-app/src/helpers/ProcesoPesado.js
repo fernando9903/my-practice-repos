@@ -1,7 +1,6 @@
 export const procesoPesado = (iteraciones) => {
-    for(let i= 0; i<iteraciones; i++) {
-        console.log('Here we go')
+    for(let i=0; i<iteraciones; i++){
+        console.log('Ahi vamos....')
     }
-
-    return `${iteraciones} iteraciones completadas`
+    return `${iteraciones} terminadas`
 }

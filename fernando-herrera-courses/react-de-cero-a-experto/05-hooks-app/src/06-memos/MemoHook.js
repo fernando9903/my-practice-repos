@@ -4,7 +4,7 @@ import { useCounter } from "../hooks/useCounter";
 
 export const MemoHook = () => {
 
-    const [counter, increment] = useCounter(5000);
+    const [counter, increment] = useCounter(1000);
     const [show, setShow] = useState(true);
 
     const memoProcesoPesado = useMemo(() => {
@@ -12,29 +12,25 @@ export const MemoHook = () => {
     }, [counter]);
 
     return (
-        <>
-            <h2>
-                Counter: 
-                <small>
-                    {counter}
-                </small>
-            </h2>
+        <div>
+            {memoProcesoPesado}
+            <h1>Memo Hook: <small>{counter}</small></h1>
             <hr></hr>
-
-            <p>{memoProcesoPesado}</p>
-
             <button
-                onClick={() => {increment()}}
+                onClick={() => {
+                    increment(1000)
+                }}
             >
                 + 1
             </button>
-            <button 
+            <button
                 onClick={() => {
                     setShow(!show);
-                }}
+                }
+                }
             >
                 Show/Hide {JSON.stringify(show)}
             </button>
-        </>
+        </div>
     );
 }

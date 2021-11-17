@@ -4,21 +4,24 @@ export const FocusScreen = () => {
 
     const inputRef = useRef();
 
-    const handleOnClick = () => {
+    const handleClick = () => {
         inputRef.current.select();
-        console.log(inputRef)
     }
 
-    return (<>
-        <h>Focus Screen</h>
-        <hr></hr>
-        <input
-            ref={inputRef}
-            type='text'
-            placeholder='Some placeholder'
-        />
-        <button
-            onClick={handleOnClick}
-        >Focus</button>
-    </>);
+    return (
+        <>
+            <h1>Focus Screen</h1>
+            <hr></hr>
+            <input
+                ref={inputRef}
+                placeholder='Your name'
+            />
+            <button
+                onClick={handleClick}
+            >
+                Focus
+            </button>
+        </>
+    );
+
 }

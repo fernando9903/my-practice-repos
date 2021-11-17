@@ -4,21 +4,21 @@ import { Small } from "./Small";
 
 export const Memorize = () => {
 
-    const [counter, increment] = useCounter(10);
+    const [counter, increment] = useCounter(1);
     const [show, setShow] = useState(true);
 
     return (
-        <>
-            <h1>
-                Counter: <Small value={counter}/>
-            </h1>
+        <div>
+            <h1>Memorize: <Small value={counter}/></h1>
             <hr></hr>
             <button
-                onClick={() => {increment()}}
+                onClick={() => {
+                    increment()
+                }}
             >
                 + 1
             </button>
-            <button 
+            <button
                 onClick={() => {
                     setShow(!show);
                 }
@@ -26,6 +26,6 @@ export const Memorize = () => {
             >
                 Show/Hide {JSON.stringify(show)}
             </button>
-        </>
+        </div>
     );
 }

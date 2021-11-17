@@ -1,0 +1,28 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Test into <GifGrid> component Debe de mostrar alguna imagen cuando la peticion es lanzada 1`] = `
+<Fragment>
+  <h3>
+    some category
+  </h3>
+  <div
+    className="card-grid animate__animated animate__fadeInTopLeft"
+  >
+    <GridItem
+      id="ABD"
+      key="ABD"
+      title="No importa el nombre"
+      url="http://some/some.jpg"
+    />
+  </div>
+</Fragment>
+`;
+
+exports[`Test into <GifGrid> component The component shoul be render correctly 1`] = `
+<Fragment>
+  <h3>
+    Star wars
+  </h3>
+  Loading...
+</Fragment>
+`;
