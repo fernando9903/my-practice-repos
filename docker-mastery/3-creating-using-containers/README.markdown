@@ -124,3 +124,39 @@ Resouorses to understand this topic.
 - Use **docker container logs** on mysql to find tghe random password it created on startup.
 - Clean it all up with **docker container stop** anmd **docker container rm** (both can accept multiple names or ID's).
 - Use **docker container ls** to ensure everything is corr ect before and after cleanup.
+
+## 24. What's Going On In Containers: CLI Process Monitoring
+
+There are multiple ways to see what is going on in containers:
+
+- ```docker container top``` : process list in one container.
+- ```docker container inspect```: details of one container config.
+- ```docker container stats```: performance stats for all containers.
+
+## 25. Getting a Shell Inside Containers: No Need for SSH
+
+> Resourse: [Package Management Basics: apt, yum, dnf, pkg](https://www.digitalocean.com/community/tutorials/package-management-basics-apt-yum-dnf-pkg)
+
+Getting a Shell Inside Containers
+
+These commands are to create and ejecute a bash for example at the firwst time that we created the container.
+
+- ```docker container run -it```: start new container interactively.
+- ```docker container exec -it```: run additional comand in existing container.
+- Different Linux distros in containers.
+
+> Example: ```sudo docker container run -it --name proxy nginx bash```.
+
+If we want to run a bash inse of an existing container we need to run a bash terminal inside a container.
+
+```
+docker container exec -it mysql bash
+```
+
+> **NOTE**: We only can execute programs that are al ready exists inside of the container.
+
+## 26. Docker Networks: Concepts for Private and Public Comms in Containers
+
+[Format command and log output](https://docs.docker.com/config/formatting/).
+
+Docker Networks Concepts
