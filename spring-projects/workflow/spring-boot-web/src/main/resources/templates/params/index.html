@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+	<meta charset="UTF-8" />
+	<title>Get HTTP params</title>
+</head>
+
+<body>
+	<a th:href="@{string(text='Its working')}">Is it works?</a><br>
+	<a th:href="@{string(text='Hello Fernando')}">Say hello to me</a><br>
+	<a th:href="@{mix-params(text='Fernando', number=23)}">mix-params</a><br>
+	<a th:href="@{mix-params2(text='Fernando', number=23)}">mix-params2</a><br>
+</body>
+
+</html>

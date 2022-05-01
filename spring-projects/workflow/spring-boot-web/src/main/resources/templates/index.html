@@ -1,10 +1,13 @@
 <!DOCTYPE html>
-<html>
+<html xmlns:th="http://www.thymeleaf.org">
 	<head>
 		<meta charset="UTF-8" />
-		<title>Spring View</title>
+		<title th:text="${title}"></title>
+		<link rel="stylesheet" th:href="@{/css/style.css}">
 	</head>
 	<body>
-		<h1>Hello World!</h1>
+		<h1 class="color-red" th:text="${header}"></h1>
+		<h2 class="color-blue">Decorating with style CSS</h2>
+		<img th:src="@{/images/cute-cat.gif}">
 	</body>
 </html>
